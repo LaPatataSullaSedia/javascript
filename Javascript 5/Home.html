@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IL METEO DEL MONDO</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+</head>
+<body>
+  <div class= "tutto">
+   <div id="mapid"></div>
+    <div class="info">    
+      <h1 id="miaLabel">In attesa di un luogo...</h1>
+        <p id="name" style="font-size: 40px;"></p>
+        <p class="desc"></p></br>
+        <img id="weather-image" src="/img/meteo.png" alt="in attesa del meteo" style="width: 200px; height: 200px;"></br></br></br>
+        <p class="temp"></p>
+        <p class="humidity"></p>
+        <div class="altro">
+          <h3>altre inf</h3>
+        <p class="pressure"></p><p class="timezone"></p>
+        <p class="sunrise"></p><p class="sunset"></p>
+        <p class="wind"></p><p class="visibility"></p> 
+      </div>
+    </div>
+  </div>
+  
+    <div class="weekly-forecast"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="meteo.js"></script>
+</body>
+</html>
