@@ -57,7 +57,7 @@ function fetchWeather(cityName) {
         document.querySelector('.sunrise').innerHTML = "Alba: " + sunriseTime.toLocaleTimeString();
         document.querySelector('.sunset').innerHTML = "Tramonto: " + sunsetTime.toLocaleTimeString();
         document.querySelector('.wind').innerHTML = "Velocità del vento: " + windSpeed + " m/s";
-        document.querySelector('.visibility').innerHTML = "Visibilità: " + visibilityValue + " metri";
+        document.querySelector('.visibility').innerHTML =  "Visibilità: " + visibilityValue + " metri";
         document.querySelector('.timezone').innerHTML = "Zona oraria: GMT " + (timezoneValue / 3600);
 
         document.getElementById('weather-image').src = getImageUrl(descValue);
